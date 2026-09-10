@@ -4,7 +4,7 @@ A premium, single-page personal portfolio for Habib ur Rehman, Business Develope
 
 ## Live site
 
-https://habib30360-eng.portfolio/
+https://habib30360-eng.github.io/
 
 ## Preview locally
 
