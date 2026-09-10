@@ -16,7 +16,7 @@ Open `http://localhost:8080`.
 
 ## Portrait asset
 
-The hero includes a styled monogram portrait fallback. To use Habib's official portrait, add a high-resolution WebP image at `assets/habib-portrait.webp`, then change the hero image's `data-src` attribute to `src` in `index.html`. A vertical 4:5 image with room around the shoulders works best.
+The hero uses Habib's selected grey-blazer portrait, optimized as a 1200×1600 WebP for fast loading and framed with a responsive cinematic crop.
 
 ## Features
 
