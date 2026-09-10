@@ -1,54 +1,366 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Innovative Hunt — digital worlds, identity, 3D and creative technology.">
-  <title>The Innovative Hunt — Hunt What’s Next</title>
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="pages.css"><link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Habib ur Rehman is a Business Developer and Upwork Bidder helping software teams turn qualified opportunities into long-term client relationships.">
+  <meta name="theme-color" content="#0b0f17">
+  <meta property="og:title" content="Habib ur Rehman — Business Developer & Upwork Bidder">
+  <meta property="og:description" content="Strategic bidding, technical proposal engineering, and B2B outreach for ambitious software teams.">
+  <title>Habib ur Rehman — Business Developer & Upwork Bidder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home-v2">
-  <div class="noise" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
-  <header class="nav-wrap home-nav">
-    <a class="brand magnetic" href="#top"><span class="brand-mark">IH</span><span>THE INNOVATIVE HUNT</span></a>
-    <nav aria-label="Primary navigation"><a href="work.html">Work</a><a href="about.html">Studio</a><a class="nav-cta magnetic" href="contact.html">Start something <span>↗</span></a></nav>
+<body>
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-mark">H<span>.</span></div>
+    <div class="loader-line"><i></i></div>
+    <p>Building connections</p>
+  </div>
+
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span>View</span></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <a class="brand magnetic" href="#home" aria-label="Habib ur Rehman, home">
+      <span class="brand-symbol">H</span>
+      <span class="brand-name">HABIB<span>.</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#experience">Experience</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta magnetic" href="#contact">Let’s talk <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </header>
 
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-index">Navigate / 07</div>
+    <nav aria-label="Mobile navigation">
+      <a href="#home"><span>01</span>Home</a>
+      <a href="#about"><span>02</span>About</a>
+      <a href="#skills"><span>03</span>Skills</a>
+      <a href="#workflow"><span>04</span>Workflow</a>
+      <a href="#experience"><span>05</span>Experience</a>
+      <a href="#services"><span>06</span>Services</a>
+      <a href="#contact"><span>07</span>Contact</a>
+    </nav>
+    <a class="mobile-email" href="mailto:habib30360@gmail.com">habib30360@gmail.com ↗</a>
+  </div>
+
   <main>
-    <section class="hunt-hero" id="top">
-      <div class="hero-rail reveal"><span>CREATIVE PRACTICE</span><i></i><span>EST. 2025</span></div>
-      <div class="hunt-headline reveal"><p class="hunt-signal"><b></b> SIGNAL FOUND / 001</p><h1><span>HUNT</span><span>WHAT’S</span><em>NEXT.</em></h1></div>
-      <div class="hunt-object reveal"><div class="object-ring"></div><canvas class="scene-canvas" data-scene="blob" data-color="#79f7e8" aria-label="Interactive dimensional object"></canvas><p><span>DRAG</span> THE UNKNOWN</p></div>
-      <aside class="hunt-note reveal"><p>Independent creative practice for brands that refuse to blend in.</p><a href="work.html">Enter the archive <span>↗</span></a><div class="coordinates">24.8607° N<br>67.0011° E</div></aside>
-      <div class="hero-ghost" aria-hidden="true">BEYOND</div>
+    <section class="hero section" id="home" data-section="home">
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="availability reveal">
+          <span class="status-dot"></span>
+          <span>Available for strategic partnerships</span>
+          <b>PK · GMT+5</b>
+        </div>
+
+        <p class="hero-name reveal">Habib ur Rehman <i></i> Business Developer & Upwork Bidder</p>
+        <h1 class="reveal">Turning opportunities into <em>successful client relationships.</em></h1>
+        <p class="hero-intro reveal">Combining strategic Upwork bidding, technical proposal engineering, and B2B outreach to scale profiles, acquire high-value clients, and drive sustainable agency growth.</p>
+
+        <div class="hero-actions reveal">
+          <a class="button button-primary magnetic" href="#contact"><span>Let’s work together</span><i>↗</i></a>
+          <a class="button button-ghost" href="#experience"><span>Explore my work</span><i>↓</i></a>
+        </div>
+
+        <div class="hero-proof reveal">
+          <div><strong>$3K</strong><span>New profile revenue<br>in 2–2.5 months</span></div>
+          <i></i>
+          <div><strong>20–25+</strong><span>Profiles managed<br>simultaneously</span></div>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" id="hero-stage">
+        <div class="stage-orbit orbit-one" aria-hidden="true"></div>
+        <div class="stage-orbit orbit-two" aria-hidden="true"></div>
+        <canvas id="hero-network" aria-hidden="true"></canvas>
+        <div class="portrait-glow" aria-hidden="true"></div>
+
+        <div class="portrait-shell" data-depth="1.1">
+          <div class="portrait-topline"><span>PROFILE / 01</span><span class="live-pill"><i></i> ACTIVE</span></div>
+          <div class="portrait-window">
+            <div class="portrait-backdrop" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="portrait-fallback" aria-label="Habib ur Rehman portrait placeholder">
+              <div class="portrait-halo"></div>
+              <svg viewBox="0 0 400 520" role="img" aria-label="Habib ur Rehman monogram portrait">
+                <defs>
+                  <linearGradient id="bodyGradient" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#9ca8a6"/>
+                    <stop offset="0.45" stop-color="#3d494a"/>
+                    <stop offset="1" stop-color="#10171a"/>
+                  </linearGradient>
+                  <radialGradient id="headGradient" cx="38%" cy="28%" r="70%">
+                    <stop offset="0" stop-color="#d7ddd9"/>
+                    <stop offset="0.45" stop-color="#697577"/>
+                    <stop offset="1" stop-color="#1b2527"/>
+                  </radialGradient>
+                </defs>
+                <circle cx="206" cy="157" r="82" fill="url(#headGradient)"/>
+                <path d="M153 222c25 21 79 22 105-1l34 26c37 29 52 95 57 189H52c5-91 21-157 60-187z" fill="url(#bodyGradient)"/>
+                <path d="M151 229l54 93 54-94 41 29-33 179H138l-29-179z" fill="#667172" opacity=".72"/>
+                <path d="M175 239l30 83 31-83-31 18z" fill="#090d11"/>
+                <path d="M150 224l55 33-42 30-32-48zm110 0l-55 33 42 30 33-49z" fill="#aab1af" opacity=".56"/>
+              </svg>
+              <span class="portrait-monogram">HR</span>
+            </div>
+            <img class="portrait-photo" src="assets/habib-portrait.webp" alt="Habib ur Rehman wearing a grey blazer and black turtleneck">
+            <div class="portrait-vignette"></div>
+            <div class="portrait-caption"><span>Lahore, Pakistan</span><span>31.5204° N</span></div>
+          </div>
+        </div>
+
+        <article class="float-card proposal-card" data-depth="1.7">
+          <div class="float-icon document-icon"><i></i><i></i><i></i></div>
+          <div><small>PROPOSAL STATUS</small><strong>High-conversion proposal sent</strong></div>
+          <span class="check">✓</span>
+        </article>
+
+        <article class="float-card metric-card" data-depth="2">
+          <small>PROFILE MOMENTUM</small>
+          <strong>$3K<span>+</span></strong>
+          <p>Revenue scaled on a new profile</p>
+          <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+
+        <article class="float-card profiles-card" data-depth="1.45">
+          <div class="profile-stack"><i>H</i><i>A</i><i>S</i><i>+</i></div>
+          <div><strong>20–25+</strong><small>Profiles managed simultaneously</small></div>
+        </article>
+
+        <article class="float-card message-card" data-depth="1.8">
+          <div class="message-head"><span class="avatar-mini">C</span><div><strong>Client channel</strong><small>Active now</small></div><i></i></div>
+          <p>“This aligns perfectly with our scope.”</p>
+          <div class="typing"><i></i><i></i><i></i></div>
+        </article>
+
+        <div class="lead-mesh" data-depth="1.35" aria-label="B2B lead generation network">
+          <span class="mesh-core">B2B</span>
+          <i style="--x:10%;--y:20%"></i><i style="--x:82%;--y:14%"></i><i style="--x:90%;--y:75%"></i><i style="--x:18%;--y:82%"></i>
+          <svg viewBox="0 0 180 130" preserveAspectRatio="none" aria-hidden="true"><path d="M90 65L18 26M90 65l71-43M90 65l74 37M90 65l-62 41"/></svg>
+        </div>
+
+        <p class="stage-caption">Move your cursor <i></i> explore the system</p>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span>Scroll to explore</span><i><b></b></i></a>
     </section>
 
-    <div class="signal-bar"><div>IDENTITY <b>✦</b> IMMERSIVE WEB <b>✦</b> THREE DIMENSIONS <b>✦</b> MOTION SYSTEMS <b>✦</b> CREATIVE CODE <b>✦</b> IDENTITY <b>✦</b> IMMERSIVE WEB <b>✦</b> THREE DIMENSIONS <b>✦</b></div></div>
+    <div class="trust-marquee" aria-hidden="true">
+      <div><span>STRATEGIC BIDDING</span><i>✦</i><span>CLIENT ACQUISITION</span><i>✦</i><span>TECHNICAL SCOPING</span><i>✦</i><span>B2B OUTREACH</span><i>✦</i><span>PROPOSAL ENGINEERING</span><i>✦</i><span>STRATEGIC BIDDING</span><i>✦</i><span>CLIENT ACQUISITION</span><i>✦</i><span>TECHNICAL SCOPING</span><i>✦</i><span>B2B OUTREACH</span><i>✦</i><span>PROPOSAL ENGINEERING</span><i>✦</i></div>
+    </div>
 
-    <section class="home-vision">
-      <div class="vision-copy"><p class="home-label reveal">01 / THE MISSION</p><h2 class="reveal">Make digital feel<br><em>physical.</em></h2><p class="reveal">We create identities and experiences with gravity, texture, rhythm, and a point of view. No templates. No visual autopilot.</p></div>
-      <div class="vision-object reveal"><canvas class="scene-canvas" data-scene="crystal" data-color="#ff4d24" aria-label="Interactive crystal model"></canvas><div class="vision-stamp">BUILT<br>TO BE<br>FELT</div><span>OBJECT / 002</span></div>
-    </section>
+    <section class="about section section-pad" id="about" data-section="about">
+      <div class="section-index reveal"><span>01</span><i></i><b>ABOUT ME</b></div>
+      <div class="about-heading">
+        <h2 class="display-title reveal">Bridging technical understanding with <em>strategic business growth.</em></h2>
+        <div class="about-copy reveal">
+          <p>I am Habib ur Rehman, a Business Developer and Upwork Specialist pursuing a BS in Software Engineering in Lahore, Pakistan.</p>
+          <p>My background enables me to evaluate project requirements with technical precision and articulate value propositions that convert cold prospects into long-term clients.</p>
+          <div class="education-note"><span>EDUCATION / 2023—2027</span><strong>BS Software Engineering</strong><p>National College of Business Administration and Economics, Lahore</p></div>
+        </div>
+      </div>
 
-    <section class="home-showcase" id="projects">
-      <div class="showcase-heading reveal"><p class="home-label">02 / SELECTED WORLDS</p><h2>Three ideas.<br>Three realities.</h2><a href="work.html">View project index ↗</a></div>
-      <div class="showcase-grid">
-        <a class="showcase-card nova-card reveal" href="nova.html"><div class="card-top"><span>01 / NOVA</span><span>IDENTITY + SOUND</span></div><canvas class="scene-canvas" data-scene="torus" data-color="#79f7e8" aria-label="Nova torus"></canvas><h3>NOVA</h3><p>A living identity tuned to discovery.</p><i>↗</i></a>
-        <a class="showcase-card form-card reveal" href="form.html"><div class="card-top"><span>02 / FORM</span><span>DIGITAL MATTER</span></div><canvas class="scene-canvas" data-scene="blob" data-color="#241f33" aria-label="Form fluid surface"></canvas><h3>FORM</h3><p>Matter without gravity or fixed edges.</p><i>↗</i></a>
-        <a class="showcase-card sol-card reveal" href="sol.html"><div class="card-top"><span>03 / SOL</span><span>ENERGY + MOTION</span></div><canvas class="scene-canvas" data-scene="wave" data-color="#ffb45c" aria-label="Sol wave field"></canvas><h3>SOL</h3><p>A warmer language for renewable energy.</p><i>↗</i></a>
+      <div class="expertise-grid">
+        <article class="expertise-card tilt-card reveal">
+          <span class="card-number">01</span><div class="expertise-icon code-icon">&lt;/&gt;</div>
+          <h3>Technical Business Development</h3><p>Understanding software architecture, requirements, and delivery before positioning the right solution.</p><i class="corner-arrow">↗</i>
+        </article>
+        <article class="expertise-card tilt-card reveal">
+          <span class="card-number">02</span><div class="expertise-icon scale-icon"><i></i><i></i><i></i></div>
+          <h3>Profile Scaling & Monetization</h3><p>Building momentum for new and stagnant accounts through focused positioning and consistent execution.</p><i class="corner-arrow">↗</i>
+        </article>
+        <article class="expertise-card tilt-card reveal">
+          <span class="card-number">03</span><div class="expertise-icon nodes-icon"><i></i><i></i><i></i><i></i></div>
+          <h3>B2B Lead Generation</h3><p>Mapping qualified markets and building targeted prospect pipelines across IT and software niches.</p><i class="corner-arrow">↗</i>
+        </article>
+        <article class="expertise-card tilt-card reveal">
+          <span class="card-number">04</span><div class="expertise-icon relationship-icon"><i></i><i></i></div>
+          <h3>Client Relationships</h3><p>Creating clear, human communication from the first conversation through handoff and retention.</p><i class="corner-arrow">↗</i>
+        </article>
       </div>
     </section>
 
-    <section class="studio-band">
-      <div class="studio-orbit reveal"><canvas class="scene-canvas" data-scene="rings" data-color="#101114" aria-label="Studio orbital model"></canvas></div>
-      <div class="studio-copy reveal"><p class="home-label">03 / ONE CONNECTED PROCESS</p><h2>Strategy.<br>Identity.<br>Experience.<br><em>Motion.</em></h2><p>One idea carried from first question to final interaction.</p><a href="about.html">Meet the practice ↗</a></div>
+    <section class="services section section-pad" id="services" data-section="services">
+      <div class="services-glow" aria-hidden="true"></div>
+      <div class="section-index reveal"><span>02</span><i></i><b>WHAT I DO</b></div>
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">SERVICES / CAPABILITIES</p><h2>Strategy built to <em>convert.</em></h2></div>
+        <p>From identifying the right opportunity to building the relationship that turns it into recurring business.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card tilt-card reveal"><div class="service-top"><span>01</span><div class="service-symbol bid-symbol"><i></i><i></i></div></div><h3>Upwork Bidding & Account Scaling</h3><p>Finding high-intent jobs, analyzing client friction points, and writing tailored proposals that convert leads into contracts.</p><a href="#contact" aria-label="Discuss Upwork bidding">Discuss service ↗</a></article>
+        <article class="service-card tilt-card reveal"><div class="service-top"><span>02</span><div class="service-symbol compass-symbol"><i></i></div></div><h3>Strategic Business Development</h3><p>Identifying market trends, building outreach pipelines, and managing relationships that foster repeat business.</p><a href="#contact" aria-label="Discuss business development">Discuss service ↗</a></article>
+        <article class="service-card tilt-card reveal"><div class="service-top"><span>03</span><div class="service-symbol proposal-symbol"><i></i><i></i><i></i></div></div><h3>High-Conversion Proposal Writing</h3><p>Engineering personalized proposals focused on problem resolution rather than boilerplate introductions.</p><a href="#contact" aria-label="Discuss proposal writing">Discuss service ↗</a></article>
+        <article class="service-card tilt-card reveal"><div class="service-top"><span>04</span><div class="service-symbol data-symbol"><i></i><i></i><i></i></div></div><h3>B2B Lead Generation & Scraping</h3><p>Using Apollo, Clutch, and LinkedIn Sales Navigator for targeted prospect research across tech niches.</p><a href="#contact" aria-label="Discuss lead generation">Discuss service ↗</a></article>
+        <article class="service-card tilt-card reveal"><div class="service-top"><span>05</span><div class="service-symbol target-symbol"><i></i></div></div><h3>Upwork Profile Optimization</h3><p>Structuring and maintaining freelancer and agency profiles to improve trust, relevance, and response quality.</p><a href="#contact" aria-label="Discuss profile optimization">Discuss service ↗</a></article>
+        <article class="service-card tilt-card reveal"><div class="service-top"><span>06</span><div class="service-symbol connect-symbol"><i></i><i></i></div></div><h3>Client Communication & Sales Engineering</h3><p>Handling negotiations, clarifying technical scope, and creating clean handoffs to development teams.</p><a href="#contact" aria-label="Discuss client communication">Discuss service ↗</a></article>
+      </div>
     </section>
 
-    <section class="home-cta">
-      <p class="home-label reveal">04 / OPEN CHANNEL</p><h2 class="reveal">Bring us the<br><span>impossible.</span></h2><div class="cta-row reveal"><a class="magnetic" href="contact.html">Start a project <i>↗</i></a><p>Available for selected identity,<br>web, and immersive commissions.</p></div><div class="cta-model"><canvas class="scene-canvas" data-scene="knot" data-color="#ff4d24" aria-label="Contact knot"></canvas></div>
+    <section class="skills section section-pad" id="skills" data-section="skills">
+      <div class="section-index reveal"><span>03</span><i></i><b>SKILLS & TOOLKIT</b></div>
+      <div class="skills-layout">
+        <div class="skills-intro reveal">
+          <p class="eyebrow">CONNECTED CAPABILITIES</p>
+          <h2>A toolkit where <em>business meets technology.</em></h2>
+          <p>Not isolated tools. A connected operating system for research, positioning, outreach, and client success.</p>
+          <div class="skill-orbit" aria-hidden="true"><span>H</span><i></i><i></i><i></i><b></b><b></b><b></b></div>
+        </div>
+
+        <div class="skill-groups">
+          <article class="skill-group reveal">
+            <div class="skill-title"><span>01</span><div><small>CORE EXPERTISE</small><h3>Business Development & Sales</h3></div><i>↗</i></div>
+            <div class="skill-tags"><span>Upwork Bidding & Strategy</span><span>Client Acquisition</span><span>Relationship Management</span><span>Proposal Engineering</span><span>B2B Outreach</span><span>Lead Nurturing</span><span>Market Trend Analysis</span></div>
+          </article>
+          <article class="skill-group reveal">
+            <div class="skill-title"><span>02</span><div><small>RESEARCH STACK</small><h3>Data & Lead Generation Tools</h3></div><i>↗</i></div>
+            <div class="skill-tags"><span>Apollo.io</span><span>Clutch.co</span><span>LinkedIn Sales Navigator</span><span>B2B Data Scraping</span><span>Target Market Research</span></div>
+          </article>
+          <article class="skill-group reveal">
+            <div class="skill-title"><span>03</span><div><small>TECHNICAL BRIDGE</small><h3>Communication & Technical Literacy</h3></div><i>↗</i></div>
+            <div class="skill-tags"><span>Software Engineering Principles</span><span>Requirement Analysis</span><span>Technical Scoping</span><span>Negotiation</span><span>AI-Assisted Outreach</span><span>WordPress</span><span>Shopify Setup</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow section section-pad" id="workflow" data-section="workflow">
+      <div class="section-index reveal"><span>04</span><i></i><b>MY WORKFLOW</b></div>
+      <div class="workflow-heading reveal">
+        <p class="eyebrow">FROM SIGNAL TO SUCCESS</p>
+        <h2>From opportunity to <em>qualified contract.</em></h2>
+      </div>
+
+      <div class="pipeline reveal" role="list">
+        <div class="pipeline-line"><i id="pipeline-progress"></i></div>
+        <article class="pipeline-step active" role="listitem" tabindex="0" data-step="01">
+          <div class="step-node"><i></i></div><span>01</span><div><small>DISCOVER</small><h3>Research & Data Scraping</h3><p>Analyze requirements, client history, and market patterns with precise research tools.</p></div>
+        </article>
+        <article class="pipeline-step" role="listitem" tabindex="0" data-step="02">
+          <div class="step-node"><i></i></div><span>02</span><div><small>QUALIFY</small><h3>Fit & Scope Analysis</h3><p>Filter high-probability opportunities where technical insight creates a real competitive edge.</p></div>
+        </article>
+        <article class="pipeline-step" role="listitem" tabindex="0" data-step="03">
+          <div class="step-node"><i></i></div><span>03</span><div><small>POSITION</small><h3>Custom Proposal Crafting</h3><p>Write a clear, non-templated response to explicit pain points and project outcomes.</p></div>
+        </article>
+        <article class="pipeline-step" role="listitem" tabindex="0" data-step="04">
+          <div class="step-node"><i></i></div><span>04</span><div><small>ENGAGE</small><h3>Client Communication</h3><p>Manage initial objections, clarify the requirement, and build confidence in the solution.</p></div>
+        </article>
+        <article class="pipeline-step" role="listitem" tabindex="0" data-step="05">
+          <div class="step-node"><i></i></div><span>05</span><div><small>GROW</small><h3>Relationship & Pipeline Management</h3><p>Maintain structured follow-ups and turn successful contracts into ongoing relationships.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section section-pad" id="experience" data-section="experience">
+      <div class="experience-backdrop" aria-hidden="true">EXPERIENCE</div>
+      <div class="section-index reveal"><span>05</span><i></i><b>EXPERIENCE</b></div>
+      <div class="experience-heading reveal"><p class="eyebrow">CAREER SIGNAL</p><h2>Built through <em>consistent outcomes.</em></h2></div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-rail"><span class="timeline-dot"></span><i></i></div>
+          <div class="timeline-date"><strong>JUL 2025<br>— FEB 2026</strong><span>Lahore / On-site</span></div>
+          <div class="timeline-role"><span>01 / LATEST ROLE</span><h3>Upwork Bidder <em>Senior / Lead</em></h3><a href="#contact">Geniousdev ↗</a></div>
+          <ul class="timeline-points">
+            <li><span>01</span>Scaled a newly created Upwork profile to $3,000 in revenue within 2 to 2.5 months.</li>
+            <li><span>02</span>Managed 20 to 25+ client profiles across active proposals and account operations.</li>
+            <li><span>03</span>Promoted from Junior to Senior based on client acquisition speed and proposal performance.</li>
+            <li><span>04</span>Submitted custom proposals daily and analyzed client trends to refine bidding strategy.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-rail"><span class="timeline-dot"></span><i></i></div>
+          <div class="timeline-date"><strong>JUL 2024<br>— MAY 2025</strong><span>Lahore / On-site</span></div>
+          <div class="timeline-role"><span>02 / FOUNDATION</span><h3>Business Developer <em>Intern</em></h3><a href="#contact">DE IT Solutions (Pvt.) Ltd ↗</a></div>
+          <ul class="timeline-points">
+            <li><span>01</span>Executed multi-profile bidding and proposal management for IT services.</li>
+            <li><span>02</span>Conducted targeted B2B data scraping and lead generation across tech niches.</li>
+            <li><span>03</span>Handled initial outreach and built relationship frameworks for long-term retention.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="why section section-pad" id="why" data-section="why">
+      <div class="section-index reveal"><span>06</span><i></i><b>THE DIFFERENCE</b></div>
+      <div class="why-heading reveal"><p class="eyebrow">WHY WORK WITH ME</p><h2>Strategic thinking.<br><em>Human execution.</em></h2></div>
+      <div class="why-grid">
+        <article class="why-card reveal"><span>01</span><div class="why-visual scope-visual"><i></i><i></i><i></i></div><h3>Technical Scoping</h3><p>A Software Engineering foundation supports accurate analysis before a promise is made.</p></article>
+        <article class="why-card reveal"><span>02</span><div class="why-visual growth-visual"><i></i><i></i><i></i><i></i></div><h3>Account Monetization</h3><p>Verified experience turning a brand-new profile into a functioning revenue channel.</p></article>
+        <article class="why-card reveal"><span>03</span><div class="why-visual text-visual"><i></i><i></i><i></i></div><h3>Zero Boilerplate</h3><p>Every proposal starts with the client’s problem, not a recycled self-introduction.</p></article>
+        <article class="why-card reveal"><span>04</span><div class="why-visual multi-visual"><i>H</i><i>A</i><i>S</i><i>+</i></div><h3>Multi-Account Management</h3><p>Capacity to coordinate 20+ profiles without trading away relevance or communication quality.</p></article>
+        <article class="why-card reveal"><span>05</span><div class="why-visual human-visual"><i></i><b>+</b><i></i></div><h3>Human-Centric Sales</h3><p>Relationship building focused on trust, useful dialogue, and long-term business value.</p></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" data-section="contact">
+      <div class="contact-orb" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="contact-inner">
+        <div class="section-index reveal"><span>07</span><i></i><b>OPEN CHANNEL</b></div>
+        <div class="contact-heading reveal">
+          <p class="eyebrow">HAVE AN OPPORTUNITY?</p>
+          <h2>Let’s turn it into <em>momentum.</em></h2>
+          <p>Whether you need to scale your Upwork agency, streamline B2B lead generation, or hire a strategic Business Developer, feel free to reach out.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-details reveal">
+            <a class="contact-primary magnetic" href="mailto:habib30360@gmail.com"><small>DIRECT EMAIL</small><span>habib30360@gmail.com</span><i>↗</i></a>
+            <div class="contact-links">
+              <a href="https://wa.me/923259733979" target="_blank" rel="noreferrer"><span>WhatsApp</span><i>↗</i></a>
+              <a href="https://www.linkedin.com/in/habiburrehman03" target="_blank" rel="noreferrer"><span>LinkedIn</span><i>↗</i></a>
+              <a href="https://www.instagram.com/habiburrehman99" target="_blank" rel="noreferrer"><span>Instagram</span><i>↗</i></a>
+            </div>
+            <div class="location-card"><div class="radar"><i></i><b></b></div><div><small>BASED IN</small><strong>Lahore, Pakistan</strong><span>Available worldwide · GMT+5</span></div></div>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <label><span>FULL NAME *</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required><small class="error">Please enter your name</small></label>
+              <label><span>EMAIL ADDRESS *</span><input type="email" name="email" autocomplete="email" placeholder="you@company.com" required><small class="error">Enter a valid email</small></label>
+            </div>
+            <div class="form-row">
+              <label><span>COMPANY / AGENCY</span><input type="text" name="company" autocomplete="organization" placeholder="Company name"></label>
+              <label><span>PROJECT CATEGORY *</span><select name="category" required><option value="" selected disabled>Select a service</option><option>Upwork Bidding & Scaling</option><option>Business Development</option><option>Proposal Writing</option><option>B2B Lead Generation</option><option>Profile Optimization</option><option>Client Communication</option><option>Other opportunity</option></select><small class="error">Select a category</small></label>
+            </div>
+            <label class="message-field"><span>MESSAGE *</span><textarea name="message" rows="5" placeholder="Tell me about the opportunity, your goals, and where you need support." required></textarea><small class="error">Please add a short message</small><b><i id="char-count">0</i> / 600</b></label>
+            <button class="submit-button magnetic" type="submit"><span>Send inquiry</span><i>↗</i><b class="submit-spinner"></b></button>
+            <p class="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="home-footer"><span>© 2025 THE INNOVATIVE HUNT</span><span>INDEPENDENT / WORLDWIDE</span><a href="#top">RETURN TO SIGNAL ↑</a></footer>
-  <script src="script.js"></script><script src="scenes.js"></script>
+  <footer>
+    <a class="footer-brand" href="#home">HABIB<span>.</span></a>
+    <p>Habib ur Rehman — Business Developer & Upwork Bidder</p>
+    <div><span>© 2026 Habib ur Rehman</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

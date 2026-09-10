@@ -1,20 +1,10 @@
-# The Innovative Hunt — 3D Portfolio
+# Habib ur Rehman — 3D Personal Portfolio
 
-A responsive multi-page portfolio with interactive canvas-rendered 3D models. Built with plain HTML, CSS, and JavaScript, with no build step or package dependencies.
+A premium, single-page personal portfolio for Habib ur Rehman, Business Developer & Upwork Bidder. The experience combines cinematic art direction, lightweight canvas-rendered particle systems, interactive 3D depth, and responsive motion without a build step or runtime dependencies.
 
 ## Live site
 
 https://habib30360-eng.github.io/innovative-hunt-3d-portfolio/
-
-## Pages
-
-- `index.html` — dimensional landing page
-- `work.html` — interactive project archive
-- `about.html` — studio story and capabilities
-- `contact.html` — animated contact experience
-- `nova.html` — immersive Nova case study
-- `form.html` — experimental Form case study
-- `sol.html` — energy-focused Sol case study
 
 ## Preview locally
 
@@ -22,21 +12,21 @@ https://habib30360-eng.github.io/innovative-hunt-3d-portfolio/
 python3 -m http.server 8080
 ```
 
-Then visit `http://localhost:8080`.
+Open `http://localhost:8080`.
 
-## Customize before using professionally
+## Portrait asset
 
-1. Replace the conceptual case studies with real project names, copy, and images.
-2. Change `your@email.com` in `contact.html`.
-3. Replace the placeholder `#` social links.
-4. Update the copyright year and page metadata if needed.
-5. Brand colors are controlled by variables in `styles.css` and per-page accents in `pages.css`.
+The hero uses Habib's selected grey-blazer portrait, optimized as a 1200×1600 WebP for fast loading and framed with a responsive cinematic crop.
 
 ## Features
 
-- Seven connected pages with distinct art direction
-- Six interactive 3D scene types: knot, torus, fluid surface, wave, crystal, and rings
-- Pointer drag controls, 3D project-card depth, magnetic buttons, and custom cursor
-- Scroll-triggered transitions and animated typography
-- Responsive desktop, tablet, and mobile layouts
-- Reduced-motion accessibility support
+- Cinematic emerald and obsidian visual system
+- Interactive hero depth, data cards, and B2B network visualization
+- Canvas-rendered ambient particles with cursor response
+- Scroll reveals, active section navigation, magnetic CTAs, and tilt cards
+- Interactive five-step acquisition pipeline
+- Verified career metrics and experience timeline
+- Validated contact form that prepares a complete email inquiry
+- Responsive mobile overlay navigation
+- Reduced-motion and keyboard accessibility support
+- Plain HTML, CSS, and JavaScript with no build step
